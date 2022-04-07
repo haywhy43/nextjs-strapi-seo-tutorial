@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seos",
+  "info": {
+    "singularName": "seo",
+    "pluralName": "seos",
+    "displayName": "SEO"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "seo_meta_tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::seo-meta-tag.seo-meta-tag",
+      "mappedBy": "seo"
+    }
+  }
+}

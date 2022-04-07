@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seo_meta_tags",
+  "info": {
+    "singularName": "seo-meta-tag",
+    "pluralName": "seo-meta-tags",
+    "displayName": "Seo Meta Tag"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Property": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "string"
+    },
+    "seo": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::seo.seo",
+      "inversedBy": "seo_meta_tags"
+    }
+  }
+}
